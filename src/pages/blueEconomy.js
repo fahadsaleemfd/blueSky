@@ -10,9 +10,6 @@ const BlueEconomy = () => (
             return (
                 <Layout>
                     <Container>
-                       
-                            
-
                         <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
 
                             <iframe

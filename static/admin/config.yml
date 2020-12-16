@@ -1,0 +1,25 @@
+backend:
+  name: github
+  # change repo to your git repository url
+  branch: master
+  repo: fahadsaleemfd/blueSky
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: blueEconomy
+    label: BlueEconomy
+    label_singular: Slider Image
+    folder: src/pages/posts/slider/
+    summary: '{{title}}'
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for BlueEconomy.
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - label: 'Video '
+        name: 'video'
+        widget: 'file'
+        required: true
+      - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }
+
