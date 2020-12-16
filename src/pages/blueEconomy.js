@@ -13,7 +13,7 @@ const BlueEconomy = () => (
                         <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
 
                             <iframe
-                                src={data.allMarkdownRemark.edges[0].node.frontmatter.video.publicURL}
+                                src={data.allMarkdownRemark.edges[0].node.frontmatter.video}
                                 title={data.allMarkdownRemark.edges[0].node.frontmatter.title}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 webkitallowfullscreen="true"
@@ -41,12 +41,7 @@ query MyQuery {
           id
           html
           frontmatter {
-            video {
-              id
-              absolutePath
-              base
-              publicURL
-            }
+            video
             title
             description
           }
