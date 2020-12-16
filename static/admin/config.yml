@@ -10,7 +10,7 @@ collections:
   - name: blueEconomy
     label: BlueEconomy
     label_singular: Slider Image
-    folder: src/pages/posts/slider/
+    folder: src/pages/posts/blueEconomy/
     summary: '{{title}}'
     description: >
       The description is a great place for tone setting, high level information, and editing
