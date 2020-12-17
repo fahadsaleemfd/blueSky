@@ -28,6 +28,20 @@ module.exports = {
         path: `${__dirname}/src/pages/posts/blueEconomy`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `videos`,
+        path: `${__dirname}/src/pages/beIdeas`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `videos`,
+        path: `${__dirname}/src/pages/posts/beStartups`,
+      },
+    },
 
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,

@@ -23,3 +23,19 @@ collections:
         required: true
       - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }
 
+
+  - name: beStartup
+    label: BE Startups
+    label_singular: Slider Image
+    folder: src/pages/posts/beStartups/
+    summary: '{{title}}'
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for BE Startups.
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - label: 'Image '
+        name: 'image'
+        widget: 'image'
+        required: true
+      - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }

@@ -16,7 +16,7 @@ const Navs = () => {
                 </Nav.Link>
                
                 <NavDropdown title="About" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Orgnizers</NavDropdown.Item>
+                    <NavDropdown.Item>Orgnizers</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Sponsors/Partners</NavDropdown.Item>
                 </NavDropdown>
                 
@@ -25,7 +25,9 @@ const Navs = () => {
                 </Nav.Link>
               
                 <NavDropdown title="BE Ideas" id="basic-ideas">
-                    <NavDropdown.Item href="#action/3.1">BE Startups</NavDropdown.Item>
+                    <NavDropdown.Item>
+                       <Link to="/beIdeas/beStartups">BE Startups</Link>
+                    </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Small Scale</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Medium Scale</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Large Scale</NavDropdown.Item>
