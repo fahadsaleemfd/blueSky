@@ -1,5 +1,5 @@
 ---
 title: BE Startups
-image: ../../../images/css.jpg
+image: /assets/featured.jpg
 description: lorem ipsum doller
 ---
