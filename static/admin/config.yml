@@ -39,3 +39,35 @@ collections:
         widget: 'image'
         required: true
       - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }
+
+  - name: beChallenge
+    label: BE Challenge 2021
+    label_singular: Be Challenge 2021
+    folder: src/pages/posts/beChallenge/
+    summary: '{{title}}'
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for BE  BE Challenge 2021.
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - label: 'Image '
+        name: 'image'
+        widget: 'image'
+        required: true
+      - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }
+
+  - name: ideathon
+    label: Ideathon
+    label_singular: Be Challenge 2021
+    folder: src/pages/posts/ideaThon/
+    summary: '{{title}}'
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for BE  BE Challenge 2021.
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - label: 'Image '
+        name: 'image'
+        widget: 'image'
+        required: true
+      - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }

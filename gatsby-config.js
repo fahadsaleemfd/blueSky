@@ -42,6 +42,21 @@ module.exports = {
         path: `${__dirname}/src/pages/posts/beStartups`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `videos`,
+        path: `${__dirname}/src/pages/posts/beChallenge`,
+      },
+    },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `videos`,
+        path: `${__dirname}/src/pages/posts/ideaThon`,
+      },
+    },
 
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,

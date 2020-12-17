@@ -21,12 +21,12 @@ const Navs = () => {
                 </NavDropdown>
                 
                 <Nav.Link>
-                    <Link to="/blueEconomy">Blue Economy</Link>
+                    <Link to="/blueeconomy">Blue Economy</Link>
                 </Nav.Link>
               
                 <NavDropdown title="BE Ideas" id="basic-ideas">
                     <NavDropdown.Item>
-                       <Link to="/beIdeas/beStartups">BE Startups</Link>
+                       <Link to="/beideas/bestartups">BE Startups</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Small Scale</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Medium Scale</NavDropdown.Item>
@@ -41,8 +41,12 @@ const Navs = () => {
                     <NavDropdown.Item href="#action/3.2">FAQS</NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link href="#link">BE Challenege 2021</Nav.Link>
-                <Nav.Link href="#link">Ideathon</Nav.Link>
+                <Nav.Link>
+                         <Link to="/bechallenge/bechallenge">BE Challenege 2021</Link>
+                </Nav.Link>
+                <Nav.Link>
+                     <Link to="/ideathon/idea">Ideathon</Link>
+                </Nav.Link>
                 <Nav.Link href="#link">Resources</Nav.Link>
                 <Nav.Link href="#link">Signup</Nav.Link>
                 <Nav.Link href="#link">Contact US</Nav.Link>
