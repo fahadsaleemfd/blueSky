@@ -22,10 +22,8 @@ collections:
         widget: 'file'
         required: true
       - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }
-
-
   - name: beStartup
-    label: BE Startups
+    label: BE Startup
     label_singular: Slider Image
     folder: src/pages/posts/beStartups/
     summary: '{{title}}'
