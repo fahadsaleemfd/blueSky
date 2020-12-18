@@ -120,7 +120,22 @@ collections:
                   label: 'Link',
                   name: link,
                   widget: string,
-                }   
+                }  
+      - label: 'Winner Prizes'
+        name: 'prizes'
+        widget: 'list'
+        fields:
+              - {
+                  label: 'Title',
+                  name:   title,
+                  widget: string,
+                }
+              - {
+                  label: 'Prize',
+                  name: prices,
+                  widget: string,
+                }
+   
                     
           
 

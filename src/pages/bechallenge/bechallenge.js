@@ -11,9 +11,19 @@ import SEO from "../../components/seo"
 const BeChallenege = () => (
     
     <StaticQuery query={beChallengequery} render={data=>{
+
+       
             {
-                const queryData = data.allMarkdownRemark.edges[0].node.frontmatter.timeline.preparation
-                console.log(queryData)
+            // const abc = [{title:"mytitle"}]
+            // {abc.map(( n )=>(
+            //     console.log(n)
+            // ))} 
+
+                // const queryData = data.allMarkdownRemark.edges[0].node.frontmatter.slider
+                // console.log(queryData)
+                // {data.allMarkdownRemark.edges[0].node.frontmatter.slider.map(({ n })=>(
+                //     console.log(n)
+                // ))} 
             }
         return ( 
 
@@ -42,7 +52,6 @@ const BeChallenege = () => (
                 <Col sm={2}  lg={2} md={2}></Col> 
              </Row> 
         </Container>
-
         {/* Timeline: key Milestones start here*/}
             <Container fluid style={{padding:"50px"}}>
                     <h1 style={{textAlign:"center"}}>Timeline: key Milestones</h1>
@@ -94,9 +103,7 @@ const BeChallenege = () => (
                         
                      </Row>
                     </Container>
-
-
-                    <Container>
+            <Container>
                         <Row>
                         <Col sm={3} xs={3}  lg={3} md={3}></Col>
                         <Col sm={6} xs={6}  lg={6} md={6}>
@@ -113,35 +120,29 @@ const BeChallenege = () => (
 
                     </Container>
 
-                    <Container>
+             <Container>
                     <Row>
                         <Col sm={3} xs={3}  lg={3} md={3}></Col>
 
                         <Col sm={6} xs={6}  lg={6} md={6}>
                             <Carousel>
+                            {data.allMarkdownRemark.edges[0].node.frontmatter.slider.map((node)=>(
+
+                                
                                     <Carousel.Item>
+                                        {/* {console.log(node)} */}
                                         <img
                                         className="d-block w-100"
-                                        src={LocalImage}
+                                        src={node.image}
                                         alt="First slide"
                                         />
                                         <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                        <h3>{node.title}</h3>
+                                        <p>{node.description}</p>
                                         </Carousel.Caption>
                                     </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"
-                                        src={LocalImage2}
-                                        alt="Third slide"
-                                        />
-
-                                        <Carousel.Caption>
-                                        <h3>Second slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
+                                   ))} 
+                                    
                                    
                             </Carousel>
                         </Col>
@@ -149,11 +150,48 @@ const BeChallenege = () => (
                         <Col sm={3} xs={3}  lg={3} md={3}></Col>
 
                         </Row>
-                    </Container>
+                </Container>
 
+            <Container>
+                <h1>Winner Prizes</h1>
 
+                   <Row>
+                        <Col sm={3} xs={3}  lg={3} md={3}>
+                        <h1>
+                                   First Prizes
+                                </h1>
+                                 <p>
+                                       2500
+                                 </p>
+                        </Col>
+                        <Col sm={3} xs={3}  lg={3} md={3}>
+                                <h1>
+                                   Second Prizes
+                                </h1>
+                                 <p>
+                                       2500
+                                 </p>
+                        </Col>
+                        <Col sm={3} xs={3}  lg={3} md={3}>
+                        <h1>
+                                   Third Prizes
+                                </h1>
+                                 <p>
+                                       2500
+                                 </p>
+                        </Col>
+                        <Col sm={3} xs={3}  lg={3} md={3}>
+                        <h1>
+                                  Honorable Mention (10 Prizes)
+                                </h1>
+                                 <p>
+                                       2500
+                                 </p>
+                        </Col>
 
+                    </Row>
 
+            </Container>
             </div>  
                    
                
@@ -182,6 +220,13 @@ query challenge {
                 title
                 description
                 image
+
+            }
+            slider {
+                title
+                description
+                image
+                link
 
             }
            
