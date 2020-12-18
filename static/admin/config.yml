@@ -48,12 +48,12 @@ collections:
       The description is a great place for tone setting, high level information, and editing
       guidelines for BE  BE Challenge 2021.
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Title', name: 'title1', widget: 'string', tagname: 'h1' }
       - label: 'Image '
         name: 'image1'
         widget: 'image'
         required: true
-      - { label: 'description1', name: 'description', widget: 'string' }
+      - { label: 'Description', name: 'description1', widget: 'string' }
 
   - name: ideathon
     label: Ideathon
