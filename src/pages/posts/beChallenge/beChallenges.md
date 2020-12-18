@@ -28,4 +28,16 @@ timeline:
     bibendum. Suspendisse potenti. Curabitur sed erat suscipit, aliquam est in,
     laoreet elit. Etiam vulputate mauris in velit sagittis, sit amet imperdiet
     libero gravida. iaculis interdum lacus. Aliquam erat volutpat.
+Philosophy:
+  description: Iteger non ligula nec felis pharetra vestibulum. Integer elementum
+    justo vitae posuere sodales. In porta nisi a tortor egestas porta. Aenean
+    varius vestibulum sodales. Nullam lobortis est dui, quis consectetur diam
+    aliquet vel. Nam non ullamcorper mi. Ut mauris risus, efficitur vitae
+    finibus et, volutpat ut massa. Curabitur porta, magna sodales sagittis
+    gravida, nunc mauris bibendum lorem, non imperdiet tortor tortor id justo.
+    Vestibulum mattis dolor accumsan, vestibulum sem vel, malesuada mauris.
+    Donec lobortis euismod enim, finibus imperdiet diam eleifend porta. Sed
+    posuere purus sapien, non scelerisque libero elementum vel
+  title: Competition Philosphy
+  image: /assets/competition_is_good_-1043x1065.png
 ---
