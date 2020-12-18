@@ -43,16 +43,29 @@ collections:
     label_singular: Be Challenge 2021
     folder: src/pages/posts/beChallenge/
     summary: '{{title1}}'
+    delete: false 
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for BE  BE Challenge 2021.
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - label: 'Image '
-        name: 'image'
+        name: 'image1'
         widget: 'image'
         required: true
-      - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }
+      - { label: 'description1', name: 'description', widget: 'string' }
+        fields:
+          - label: 'Post Settings'
+          - name: 'posts'
+            widget: 'object'
+             fields:
+              - {
+                  label: 'Prepartaion'
+                  name: predesc
+                  widget: 'string'
+                  tagname: 'h2'
+                }
+              - { label: 'Round 1', name: round1, widget: string }
 
   - name: ideathon
     label: Ideathon
