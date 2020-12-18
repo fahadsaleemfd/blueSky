@@ -40,4 +40,13 @@ Philosophy:
     posuere purus sapien, non scelerisque libero elementum vel
   title: Competition Philosphy
   image: /assets/competition_is_good_-1043x1065.png
+slider:
+  - title: Demo
+    description: Thematic Areas would in general require
+    image: /assets/startup_renovables_746x419_eng.jpg
+    link: http://localhost:8000/admin/#/collections/beChallenge/entries/beChallenges
+  - title: demo2
+    image: /assets/startup.png
+    description: Addition, Market Expansion, Productivity/Yield enhancement,
+    link: http://localhost:8000/admin/#/collections/beChallenge/entries/beChallenges
 ---
