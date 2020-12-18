@@ -1,6 +1,6 @@
 ---
 title1: BE Challenge
-image1: /assets/challenge1.webp
+image1: /assets/startup.png
 description1: Thematic Areas would in general require coming up with Solutions
   to existing local/national level problems which may involve Value Addition,
   Market Expansion, Productivity/Yield enhancement, Waste and Cost Reduction,
