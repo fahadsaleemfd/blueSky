@@ -54,6 +54,17 @@ collections:
         widget: 'image'
         required: true
       - { label: 'Description', name: 'description1', widget: 'string' }
+      - label: 'Post Settings'
+        name: 'test'
+        widget: 'object'
+        fields:
+              - {
+                  label: 'Number of posts on frontpage',
+                  name: front_limit,
+                  widget: number,
+                  min: 1,
+                  max: 10,
+                }
 
   - name: ideathon
     label: Ideathon
