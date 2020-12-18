@@ -145,6 +145,20 @@ collections:
                   name: honours,
                   widget: string,
                 }
+      - label: 'Slider 2'
+        name: 'slider2'
+        widget: 'list'
+        fields:
+              - {
+                  label: 'Title',
+                  name:   title,
+                  widget: string,
+                }
+              - {
+                  label: 'Description',
+                  name: description,
+                  widget: markdown,
+                } 
    
                     
           

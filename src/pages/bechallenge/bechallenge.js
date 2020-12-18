@@ -52,8 +52,8 @@ const BeChallenege = () => (
                 <Col sm={2}  lg={2} md={2}></Col> 
              </Row> 
         </Container>
-        {/* Timeline: key Milestones start here*/}
-            <Container fluid style={{padding:"50px"}}>
+       
+        <Container fluid style={{padding:"50px"}}>
                     <h1 style={{textAlign:"center"}}>Timeline: key Milestones</h1>
                      <Row style={{padding:"50px"}}>
                          <Col sm={12} xs={12}  lg={3} md={6}>
@@ -103,7 +103,7 @@ const BeChallenege = () => (
                         
                      </Row>
                     </Container>
-            <Container>
+        <Container>
                         <Row>
                         <Col sm={3} xs={3}  lg={3} md={3}></Col>
                         <Col sm={6} xs={6}  lg={6} md={6}>
@@ -120,7 +120,7 @@ const BeChallenege = () => (
 
                     </Container>
 
-             <Container>
+        <Container>
                     <Row>
                         <Col sm={3} xs={3}  lg={3} md={3}></Col>
 
@@ -161,7 +161,7 @@ const BeChallenege = () => (
                                    First Prizes
                                 </h1>
                                  <p>
-                                       2500
+                                 {data.allMarkdownRemark.edges[0].node.frontmatter.prizes.first}
                                  </p>
                         </Col>
                         <Col sm={3} xs={3}  lg={3} md={3}>
@@ -169,7 +169,7 @@ const BeChallenege = () => (
                                    Second Prizes
                                 </h1>
                                  <p>
-                                       2500
+                                        {data.allMarkdownRemark.edges[0].node.frontmatter.prizes.second}
                                  </p>
                         </Col>
                         <Col sm={3} xs={3}  lg={3} md={3}>
@@ -177,7 +177,7 @@ const BeChallenege = () => (
                                    Third Prizes
                                 </h1>
                                  <p>
-                                       2500
+                                 {data.allMarkdownRemark.edges[0].node.frontmatter.prizes.third}
                                  </p>
                         </Col>
                         <Col sm={3} xs={3}  lg={3} md={3}>
@@ -185,13 +185,38 @@ const BeChallenege = () => (
                                   Honorable Mention (10 Prizes)
                                 </h1>
                                  <p>
-                                       2500
+                                 {data.allMarkdownRemark.edges[0].node.frontmatter.prizes.honours}
                                  </p>
                         </Col>
 
                     </Row>
 
             </Container>
+        {/* Second Slider */}
+            <Container>
+                    <Row>
+                        <Col sm={3} xs={3}  lg={3} md={3}></Col>
+
+                        <Col sm={6} xs={6}  lg={6} md={6}>
+                            <Carousel>
+                            {data.allMarkdownRemark.edges[0].node.frontmatter.slider.map((node)=>(
+
+                                
+                                    <Carousel.Item>
+                                       
+                                    </Carousel.Item>
+                                   ))} 
+                                    
+                                   
+                            </Carousel>
+                        </Col>
+                        
+                        <Col sm={3} xs={3}  lg={3} md={3}></Col>
+
+                        </Row>
+                </Container>
+                {/* Second Slider end */}
+            
             </div>  
                    
                
@@ -228,6 +253,12 @@ query challenge {
                 image
                 link
 
+            }
+            prizes {
+                first
+                second
+                third
+                honours
             }
            
           }
