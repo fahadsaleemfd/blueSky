@@ -123,16 +123,26 @@ collections:
                 }  
       - label: 'Winner Prizes'
         name: 'prizes'
-        widget: 'list'
+        widget: 'object'
         fields:
               - {
-                  label: 'Title',
-                  name:   title,
+                  label: 'First Prize',
+                  name:   first,
                   widget: string,
                 }
               - {
-                  label: 'Prize',
-                  name: prices,
+                  label: 'Second Prize',
+                  name: second,
+                  widget: string,
+                }
+              - {
+                  label: 'Third Prize',
+                  name:   third,
+                  widget: string,
+                }
+              - {
+                  label: 'Honorable Mention(10 Prizes)',
+                  name: honours,
                   widget: string,
                 }
    
