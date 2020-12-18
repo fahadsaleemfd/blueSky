@@ -2,7 +2,7 @@ import React from "react"
 import { Container } from "react-bootstrap"
 import Layout from "../../components/layout"
 import { StaticQuery, graphql } from "gatsby"
-import {Row,Col,Image,Card ,CardDeck ,CardGroup,Button} from 'react-bootstrap'
+import {Row,Col,Image,Card ,CardDeck ,CardGroup,Button,Carousel } from 'react-bootstrap'
 import LocalImage from '../../images/html.jpg'
 import LocalImage2 from '../../images/challenge1.webp'
 import  "../../components/beChallenge.css"
@@ -94,21 +94,17 @@ const BeChallenege = () => (
                         
                      </Row>
                     </Container>
+
+
                     <Container>
                         <Row>
                         <Col sm={3} xs={3}  lg={3} md={3}></Col>
                         <Col sm={6} xs={6}  lg={6} md={6}>
-                            <h1>Title</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing 
-                                and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled
-                                it to make a type specimen book. It has survived not only five centuries, but 
-                                also the leap into electronic typesetting, remaining essentially unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing 
-                                Lorem Ipsum passages, and more recently with desktop publishing
-                                software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                                <Image  src={data.allMarkdownRemark.edges[0].node.frontmatter.image1} className="center"  style={{minHeight:"500px"}} fluid/>
+                                <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.Philosophy.title}</h1>
+                            <p>
+                                {data.allMarkdownRemark.edges[0].node.frontmatter.Philosophy.description} 
+                            </p>
+                                <Image  src={data.allMarkdownRemark.edges[0].node.frontmatter.Philosophy.image} className="center"  style={{minHeight:"500px"}} fluid/>
 
                         </Col>
                         <Col sm={3} xs={3}  lg={3} md={3}></Col>
@@ -116,6 +112,48 @@ const BeChallenege = () => (
                         </Row>
 
                     </Container>
+
+                    <Container>
+                    <Row>
+                        <Col sm={3} xs={3}  lg={3} md={3}></Col>
+
+                        <Col sm={6} xs={6}  lg={6} md={6}>
+                            <Carousel>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"
+                                        src={LocalImage}
+                                        alt="First slide"
+                                        />
+                                        <Carousel.Caption>
+                                        <h3>First slide label</h3>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"
+                                        src={LocalImage2}
+                                        alt="Third slide"
+                                        />
+
+                                        <Carousel.Caption>
+                                        <h3>Second slide label</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                   
+                            </Carousel>
+                        </Col>
+                        
+                        <Col sm={3} xs={3}  lg={3} md={3}></Col>
+
+                        </Row>
+                    </Container>
+
+
+
+
             </div>  
                    
                
@@ -140,6 +178,12 @@ query challenge {
                 round2
                 round3
               }
+            Philosophy {
+                title
+                description
+                image
+
+            }
            
           }
           
