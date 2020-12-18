@@ -199,11 +199,14 @@ const BeChallenege = () => (
 
                         <Col sm={6} xs={6}  lg={6} md={6}>
                             <Carousel>
-                            {data.allMarkdownRemark.edges[0].node.frontmatter.slider.map((node)=>(
+                            {data.allMarkdownRemark.edges[0].node.frontmatter.slider2.map((node)=>(
 
                                 
                                     <Carousel.Item>
-                                       
+                                        <h1>{node.title}</h1>
+                                       <div style={{height:"500px", width:"500px"}}>
+                                            {node.description}
+                                       </div>
                                     </Carousel.Item>
                                    ))} 
                                     
@@ -259,6 +262,10 @@ query challenge {
                 second
                 third
                 honours
+            }
+            slider2 {
+                title
+                description
             }
            
           }
