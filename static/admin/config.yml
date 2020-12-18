@@ -76,7 +76,7 @@ collections:
               - {
                   label: 'Round3',
                   name: round3,
-                  widget: string,
+                  widget: markdown,
                 }
       - label: 'Competition Philosophy'
         name: 'Philosophy'
