@@ -58,7 +58,7 @@ collections:
           - label: 'Post Settings'
           - name: 'posts'
             widget: 'object'
-             fields:
+            fields:
               - {
                   label: 'Prepartaion'
                   name: predesc
