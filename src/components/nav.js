@@ -6,7 +6,7 @@ import {NavDropdown, Container} from 'react-bootstrap'
 const Navs = () => {
     return (
     <Container>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="" expand="lg">
         
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
