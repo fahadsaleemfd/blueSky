@@ -12,7 +12,7 @@ const BeChallenege = () => (
     
     <StaticQuery query={beChallengequery} render={data=>{
             {
-                const queryData = data.allMarkdownRemark.edges[0].node.frontmatter
+                const queryData = data.allMarkdownRemark.edges[0].node.frontmatter.timeline.preparation
                 console.log(queryData)
             }
         return ( 
@@ -52,7 +52,7 @@ const BeChallenege = () => (
                                             <Card.Body>
                                                 <Card.Title style={{textAlign:"center"}}>Preparation</Card.Title>
                                                  <Card.Text>
-                                                       {data.allMarkdownRemark.edges[0].node.frontmatter.predesc}      
+                                                       {data.allMarkdownRemark.edges[0].node.frontmatter.timeline.preparation}      
                                                 </Card.Text>
                                             </Card.Body>
                                         </Card>          
@@ -62,7 +62,7 @@ const BeChallenege = () => (
                                             <Card.Body>
                                                 <Card.Title style={{textAlign:"center"}}>ROUND 1</Card.Title>
                                                  <Card.Text>
-                                                 {data.allMarkdownRemark.edges[0].node.frontmatter.round1}
+                                                 {data.allMarkdownRemark.edges[0].node.frontmatter.timeline.round1}
                                                 </Card.Text>
                                             </Card.Body>
                                         </Card>              
@@ -72,7 +72,7 @@ const BeChallenege = () => (
                                             <Card.Body>
                                                 <Card.Title style={{textAlign:"center"}}>ROUND 2</Card.Title>
                                                  <Card.Text>  
-                                                        {data.allMarkdownRemark.edges[0].node.frontmatter.round2}
+                                                        {data.allMarkdownRemark.edges[0].node.frontmatter.timeline.round2}
                                                 </Card.Text>
                                             </Card.Body>
                                         </Card>             
@@ -82,7 +82,7 @@ const BeChallenege = () => (
                                             <Card.Body>
                                                 <Card.Title style={{textAlign:"center"}}>ROUND 3: TOP 10 SHORTLIST</Card.Title>
                                                  <Card.Text>
-                                                 {data.allMarkdownRemark.edges[0].node.frontmatter.round3}
+                                                 {data.allMarkdownRemark.edges[0].node.frontmatter.timeline.round3}
                                                 </Card.Text>
                                             </Card.Body>
                                         </Card>             
@@ -116,10 +116,13 @@ query challenge {
             title1
             image1
             description1
-            predesc
-            round1
-            round2
-            round3
+            timeline {
+                preparation
+                round1
+                round2
+                round3
+              }
+           
           }
           
         }
