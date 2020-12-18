@@ -49,4 +49,9 @@ slider:
     image: /assets/startup.png
     description: Addition, Market Expansion, Productivity/Yield enhancement,
     link: http://localhost:8000/admin/#/collections/beChallenge/entries/beChallenges
+prizes:
+  first: 1,000,000
+  second: " 300,000"
+  third: 500,000
+  honours: "100,000 "
 ---
