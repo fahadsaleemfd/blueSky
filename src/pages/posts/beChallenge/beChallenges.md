@@ -54,4 +54,17 @@ prizes:
   second: " 300,000"
   third: 500,000
   honours: "100,000 "
+slider2:
+  - title: React
+    description: "*React* is a declarative, efficient, and flexible JavaScript
+      library for building user interfaces. It lets you compose complex UIs from
+      small and isolated pieces of code called “components”. *React* has a few
+      different kinds of components, but we'll start with *React*.Component
+      subclasses: class ShoppingList extends"
+  - title: Angular
+    description: "*React* is a declarative, efficient, and flexible JavaScript
+      library for building user interfaces. It lets you compose complex UIs from
+      small and isolated pieces of code called “components”. *React* has a few
+      different kinds of components, but we'll start with *React*.Component
+      subclasses: class ShoppingList extends"
 ---
