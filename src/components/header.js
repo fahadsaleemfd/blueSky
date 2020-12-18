@@ -5,7 +5,7 @@ import Navs from "../components/nav"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#b8d2ff`,
+      background: `white`,
      
     }}
   >

@@ -22,31 +22,29 @@ const BeChallenege = () => (
         <Layout>
             <SEO title="Be Challenege 2021" />
         </Layout>
-        <Container fluid >
 
-                    <Row style={{position: "relative", left: "0", right: "0",zIndex: "-1", background:"#b8d2ff"}}>
-                        <Col sm={4}  lg={4} md={4}>                       
-                        </Col>
-                        <Col sm={8} xs={12} lg={8} md={8}>                               
-                            
-                                  <Image  src={data.allMarkdownRemark.edges[0].node.frontmatter.image1} style={{minHeight:"500px"}} fluid/>
-                        </Col>
-                     </Row>
-                     <Row style={{position:"absolute", top:"100px"}}>
-                         <Col sm={12} xs={12 }  lg={12} md={10}>
-                         <div id="paragraph">
-                                        <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title1}</h1>
-                                        <br></br>
-                                        <p>
-                                        {data.allMarkdownRemark.edges[0].node.frontmatter.description1}
-                                        </p>
-                                </div>
-                         </Col>
-                     </Row>
+        <Container fluid >
+             <Image  src={data.allMarkdownRemark.edges[0].node.frontmatter.image1} className="center"  style={{minHeight:"500px"}} fluid/>
+        </Container>
+
+        <Container fluid>
+             <Row><br></br>
+             <Col sm={2}  lg={2} md={2}></Col> 
+                <Col sm={8}  lg={8} md={8}> 
+                        <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title1}</h1>
+                        
+                        <br></br>
+                        
+                         <p>
+                            {data.allMarkdownRemark.edges[0].node.frontmatter.description1}
+                        </p>
+                </Col>
+                <Col sm={2}  lg={2} md={2}></Col> 
+             </Row> 
         </Container>
 
         {/* Timeline: key Milestones start here*/}
-            <Container fluid style={{background:"#b8d2ff", padding:"50px"}}>
+            <Container fluid style={{padding:"50px"}}>
                     <h1 style={{textAlign:"center"}}>Timeline: key Milestones</h1>
                      <Row style={{padding:"50px"}}>
                          <Col sm={12} xs={12}  lg={3} md={6}>
