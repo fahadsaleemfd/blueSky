@@ -90,12 +90,12 @@ collections:
               - {
                   label: 'Description',
                   name: description,
-                  widget: body,
+                  widget: markdown,
                 }
               - {
                   label: 'Image',
                   name: image,
-                  widget: markdown,
+                  widget: image,
                 }      
           
 
