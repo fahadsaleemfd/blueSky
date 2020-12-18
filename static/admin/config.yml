@@ -99,7 +99,7 @@ collections:
                 }
       - label: 'Slider'
         name: 'slider'
-        widget: 'object'
+        widget: 'list'
         fields:
               - {
                   label: 'Title',
