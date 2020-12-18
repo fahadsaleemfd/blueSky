@@ -54,18 +54,6 @@ collections:
         widget: 'image'
         required: true
       - { label: 'description1', name: 'description', widget: 'string' }
-        fields:
-          - label: 'Post Settings'
-          - name: 'posts'
-            widget: 'object'
-            fields:
-              - {
-                  label: 'Prepartaion'
-                  name: predesc
-                  widget: 'string'
-                  tagname: 'h2'
-                }
-              - { label: 'Round 1', name: round1, widget: string }
 
   - name: ideathon
     label: Ideathon
