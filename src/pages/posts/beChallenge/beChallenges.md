@@ -1,6 +1,6 @@
 ---
 title1: BE Challenge
-image1: /assets/startup.png
+image1: /assets/gxjxh.jpg
 description1: Thematic Areas would in general require coming up with Solutions
   to existing local/national level problems which may involve Value Addition,
   Market Expansion, Productivity/Yield enhancement, Waste and Cost Reduction,
@@ -62,6 +62,12 @@ slider2:
       different kinds of components, but we'll start with *React*.Component
       subclasses: class ShoppingList extends"
   - title: Angular
+    description: "*React* is a declarative, efficient, and flexible JavaScript
+      library for building user interfaces. It lets you compose complex UIs from
+      small and isolated pieces of code called “components”. *React* has a few
+      different kinds of components, but we'll start with *React*.Component
+      subclasses: class ShoppingList extends"
+  - title: Gatsby
     description: "*React* is a declarative, efficient, and flexible JavaScript
       library for building user interfaces. It lets you compose complex UIs from
       small and isolated pieces of code called “components”. *React* has a few
