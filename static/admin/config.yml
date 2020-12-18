@@ -63,6 +63,21 @@ collections:
                   name: preparation,
                   widget: string,
                 }
+              - {
+                  label: 'Round1',
+                  name: round1,
+                  widget: string,
+                }
+              - {
+                  label: 'Round2',
+                  name: round2,
+                  widget: string,
+                }
+              - {
+                  label: 'Round3',
+                  name: round3,
+                  widget: string,
+                }
 
   - name: ideathon
     label: Ideathon
