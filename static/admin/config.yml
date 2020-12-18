@@ -78,6 +78,26 @@ collections:
                   name: round3,
                   widget: string,
                 }
+      - label: 'Competition Philosophy'
+        name: 'Philosophy'
+        widget: 'object'
+        fields:
+              - {
+                  label: 'Title',
+                  name:   title,
+                  widget: string,
+                }
+              - {
+                  label: 'Description',
+                  name: description,
+                  widget: body,
+                }
+              - {
+                  label: 'Image',
+                  name: image,
+                  widget: image,
+                }      
+          
 
   - name: ideathon
     label: Ideathon
