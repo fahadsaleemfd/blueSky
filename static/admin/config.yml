@@ -182,7 +182,7 @@ collections:
         fields:
               - {
                   label: 'Title',
-                  name: Description,
+                  name: title,
                   widget: string,
                 }
               - {
