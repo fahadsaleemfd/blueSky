@@ -173,10 +173,6 @@ collections:
       guidelines for BE resources.
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - label: 'Image '
-        name: 'image'
-        widget: 'image'
-        required: true
       - { label: 'Description', name: 'description', widget: 'string', hint: 'Description will be here' }
       - { label: 'Title 2', name: 'title2', widget: string, hint: 'Description will be here' }
       - { label: 'Description 2', name: 'description2', widget: string, hint: 'Description will be here' }
