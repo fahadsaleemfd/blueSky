@@ -76,7 +76,7 @@ query resourceQuery {
               listTitle {
                 description
                 buttonLabel
-                Description
+                title
               }
             }
           }

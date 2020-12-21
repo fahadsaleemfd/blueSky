@@ -168,6 +168,7 @@ collections:
     label_singular: Resources 2021
     folder: src/pages/posts/resources/
     summary: '{{title}}'
+    create: true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for BE resources.
