@@ -47,7 +47,11 @@ const Navs = () => {
                 <Nav.Link>
                      <Link to="/ideathon/idea">Ideathon</Link>
                 </Nav.Link>
-                <Nav.Link href="#link">Resources</Nav.Link>
+
+                <Nav.Link>
+                    <Link to="/resources">Resources</Link>
+                </Nav.Link>
+              
                 <Nav.Link href="#link">Signup</Nav.Link>
                 <Nav.Link href="#link">Contact US</Nav.Link>
 
