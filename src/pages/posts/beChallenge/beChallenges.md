@@ -73,4 +73,8 @@ slider2:
       small and isolated pieces of code called “components”. *React* has a few
       different kinds of components, but we'll start with *React*.Component
       subclasses: class ShoppingList extends"
+  - title: Node
+    description: Node.js is an open-source, cross-platform, back-end, JavaScript
+      runtime environment that executes JavaScript code outside a web
+      browser. [Wikipedia](https://en.wikipedia.org/wiki/Node.js)
 ---
